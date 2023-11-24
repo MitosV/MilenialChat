@@ -21,8 +21,8 @@ const SetupPage = async () => {
         return redirect(`/servers/${server.id}`);
     }
 
-    //return redirect(`/invite/${process.env.DEFAULT_SERVER_UUID}`);
-    return <InitialModal />;
+    return redirect(`/invite/${process.env.DEFAULT_SERVER_UUID}`);
+    //return <InitialModal />;
 };
 
 export default SetupPage;
